@@ -32,7 +32,7 @@
   }
   
   a {
-      color: var(--fran-gold);
+      color: var(--fran-blue);
       text-decoration: underline;
       font-family: 'Montserrat';
   }
@@ -50,38 +50,7 @@
   .body-dark-mode a {
     color: var(--fran-brown);
   }
-  
-  .pad-2x {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-  
-  .pad-3x {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-  
-  .pad-2y {
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-  
-  .pad-3y {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-  
-  .root-small-space {
-    padding-top: 2em;
-  }
-  
-  .root-med-space {
-    padding-top: 5em;
-  }
-  
-  .root-large-space {
-    padding-top: 8em;
-  }
+
   
   .root-lowercase-btn {
       color: var(--root-lowercase-btn-color);
