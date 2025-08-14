@@ -57,23 +57,27 @@ a:hover {
 .root-lowercase-btn {
     color: var(--root-lowercase-btn-color);
     --root-lowercase-btn-color: #2b2b2b;
+
     font-size: 1em;
     font-family: 'Montserrat';
+	font-weight: 600;
+	text-align: center;
+    text-decoration: none;
+
     background-color: var(--root-lowercase-btn-background-color);
     --root-lowercase-btn-background-color: #fbb555;
     border: 1px solid transparent;
         border-color: var(--root-lowercase-btn-border-color);
     --root-lowercase-btn-border-color: transparent;
-    padding: .75em 1em;
-    border-radius: 25px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
 
-    display: block;
+	display: block;
     width: fit-content;
     margin: 10px auto;
+    padding: .75em 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    
 }
 .root-lowercase-btn:hover {
     background-color: var(--root-lowercase-btn-background-color-hover);
