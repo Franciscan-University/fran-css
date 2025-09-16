@@ -29,6 +29,9 @@ h3 {
 a {
     color: var(--fran-blue);
 }
+img {
+    max-width: 100%;
+}
 
 .body-dark-mode h1 {
     color: #d1c4c4;
