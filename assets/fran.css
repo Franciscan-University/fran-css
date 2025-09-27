@@ -298,3 +298,49 @@ a:hover {
     background-color: var(--fran-blue);
     border-color: var(--fran-blue);
 }
+
+
+
+
+
+
+/* === Fran Dropdown CSS ==== */
+.fran-dd {
+	border-top: 1px solid var(--conf-darkblue);
+	width: 100%;
+}
+.fran-dd .fran-question-box {
+	display: flex;
+	display: -ms-flexbox;
+	cursor: pointer;
+}
+.fran-dd .fran-question-icon {
+	width: 50px;
+	flex: 0 0 50px;
+}
+.fran-dd .fran-question {
+	flex: 1;
+	font-family: 'scale-variable';
+	font-variation-settings: 'wght' 450, 'wdth' 107;
+	font-size: 1.1em;
+	letter-spacing: 0.01em;
+	margin-top: 1.2em;
+}
+.fran-dd .fran-answer {
+	height: 0;
+	overflow: hidden;
+	transition: 0.2s;
+}
+.fran-dd .fran-answer-wrap {
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: column;
+	padding-bottom: 2em;
+}
+.fran-dd .fran-answer ul {
+	padding-top: 0;
+	margin: 0;
+}
+.fran-dd .fran-question-icon i {
+	transition: 0.2s;
+}
