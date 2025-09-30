@@ -344,3 +344,63 @@ a:hover {
 .fran-dd .fran-question-icon i {
 	transition: 0.2s;
 }
+
+
+
+
+
+
+/* === Fran Schedule ==== */
+.fran-schedule .fran-tab-group {
+	width: 100%;
+}
+.fran-schedule .fran-tab-group ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+.fran-schedule .fran-tab-group .fran-tab {
+	background-color: var(--fran-blue);
+	color: white;
+	padding: 0.9em 1em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: 'objektiv-mk3';
+	border-radius: 0;
+	margin: 3px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.fran-schedule .fran-tab-group button:hover {
+	background-color: var(--fran-teal);
+}
+.fran-schedule .fran-tab-group .fran-tab-active {
+	background-color: var(--fran-teal);
+}
+
+.fran-schedule .program-section-row {
+	max-width: 650px;
+	margin: auto;
+}
+.fran-schedule .event-box {
+	border-left: 5px solid var(--fran-gold);
+	padding-left: 1em;
+	margin-top: 2.5em;
+}
+.fran-schedule .event-box .event-time {
+	font-weight: 600;
+	font-size: 1.4em;
+	margin-bottom: 0;
+}
+.fran-schedule .event-box .event-desc {
+	font-size: 1.1em;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.program-section-panel {
+	display: none;
+}
+.program-section-panel-active {
+	display: block;
+}
