@@ -334,13 +334,19 @@ a:hover {
 
 	.fran-dec-btn-rec.mobile-collapse-btn .dec-image,
 	.fran-dec-btn-square.mobile-collapse-btn .dec-image,
-	.fran-dec-btn-circle.mobile-collapse-btn .dec-image {
+	.fran-dec-btn-circle.mobile-collapse-btn .dec-image, 
+	.fran-dec-btn-rec.mobile-collapse-btn-border .dec-image,
+	.fran-dec-btn-square.mobile-collapse-btn-border .dec-image,
+	.fran-dec-btn-circle.mobile-collapse-btn-border .dec-image {
 		display: none;
 	}
 
 	.fran-dec-btn-rec.mobile-collapse-btn p,
 	.fran-dec-btn-square.mobile-collapse-btn p,
-	.fran-dec-btn-circle.mobile-collapse-btn p {
+	.fran-dec-btn-circle.mobile-collapse-btn p,
+	.fran-dec-btn-rec.mobile-collapse-btn-border p,
+	.fran-dec-btn-square.mobile-collapse-btn-border p,
+	.fran-dec-btn-circle.mobile-collapse-btn-border p {
 		padding: 20px 0;
 	}
 
