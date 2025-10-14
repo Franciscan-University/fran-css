@@ -277,7 +277,7 @@ a:hover {
 .fran-dec-btn-square {
 	width: 100%;
 	max-width: 250px;
-	margin: auto;
+	margin: 0 auto;
 	text-decoration: none;
 	cursor: pointer;
 	transition: transform 0.2s;
@@ -289,6 +289,7 @@ a:hover {
 	background-position: center;
 	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
 	border-radius: 10px;
+	box-shadow: 0 3px 7px #00000047;
 }
 .fran-dec-btn-square p {
 	color: black;
