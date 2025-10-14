@@ -521,3 +521,79 @@ a:hover {
 .program-section-panel-active {
 	display: block;
 }
+
+
+
+/* === Stylized Images =========== */
+/* Arched */
+img.fran-img-arched {
+	border-top-left-radius: 80% 60%;
+	border-top-right-radius: 80% 60%;
+}
+div.fran-img-arched {
+	width: 100%;
+	height: 90vw;
+	background-size: cover;
+	background-position: center;
+	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
+	border-top-left-radius: 80% 60%;
+	border-top-right-radius: 80% 60%;
+}
+
+/* Arched with echoed arches */
+.fran-img-arched-echoed {
+	width: 90%;
+	height: 90vw;
+	margin: 2em auto;
+	position: relative;
+}
+.fran-img-arched-echoed .arch-shape {
+	position: absolute;
+	width: 93%;
+	height: 95%;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid var(--fran-blue);
+	border-top-left-radius: 90% 50%;
+	border-top-right-radius: 90% 50%;
+}
+.fran-img-arched-echoed div:nth-child(2).arch-shape {
+	inset: 0;
+	margin: auto;
+}
+.fran-img-arched-echoed .arch-image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 93%;
+	height: 96%;
+	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
+	background-size: cover;
+	background-position: center;
+	border-top-left-radius: 90% 50%;
+	border-top-right-radius: 90% 50%;
+}
+
+/* Oval */
+.fran-img-oval-holder {
+	transform: rotate(-20deg);
+	width: 33vw;
+}
+.fran-img-oval-holder .oval {
+	background-color: var(--fran-blue);
+	width: 81%;
+	height: 40vw;
+	max-height: 540px;
+	margin: auto;
+	border-radius: 100%;
+	overflow: hidden;
+	transform: scaleX(-1);
+}
+.fran-img-oval-holder .oval-inner {
+	width: 111%;
+	height: 112%;
+	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
+	background-size: cover;
+	background-position: center;
+	transform: rotate(-20deg);
+}
