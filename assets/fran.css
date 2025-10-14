@@ -245,28 +245,42 @@ a:hover {
 
 
 
-/* Decorative rectangle button */
-.fran-dec-btn-rec {
-	width: 100%;
-	max-width: 300px;
-	margin: auto;
+/* === Decorative Buttons ====== */
+.fran-dec-btn-rec, 
+.fran-dec-btn-square,
+.fran-dec-btn-circle {
+	margin: 0 auto;
 	text-decoration: none;
 	cursor: pointer;
 	transition: transform 0.2s;
 }
-.fran-dec-btn-rec .dec-image {
-	width: 100%;
-	aspect-ratio: 3 / 2;
+
+.fran-dec-btn-rec .dec-image, 
+.fran-dec-btn-square .dec-image,
+.fran-dec-btn-circle .dec-image {
 	background-size: cover;
 	background-position: center;
 	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
-	border-radius: 10px;
 }
-.fran-dec-btn-rec p {
+
+.fran-dec-btn-rec p, 
+.fran-dec-btn-square p,
+.fran-dec-btn-circle p {
 	color: black;
 	font-weight: 500;
 	text-align: center;
 	margin-top: 10px;
+}
+
+/* Decorative rectangle button */
+.fran-dec-btn-rec {
+	width: 100%;
+	max-width: 300px;
+}
+.fran-dec-btn-rec .dec-image {
+	width: 100%;
+	aspect-ratio: 3 / 2;
+	border-radius: 10px;
 }
 .fran-dec-btn-rec:hover {
 	transform: scale(1.05);
@@ -277,25 +291,11 @@ a:hover {
 .fran-dec-btn-square {
 	width: 100%;
 	max-width: 250px;
-	margin: 0 auto;
-	text-decoration: none;
-	cursor: pointer;
-	transition: transform 0.2s;
 }
 .fran-dec-btn-square .dec-image {
 	width: 100%;
 	aspect-ratio: 1 / 1;
-	background-size: cover;
-	background-position: center;
-	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
 	border-radius: 10px;
-	box-shadow: 0 3px 7px #00000047;
-}
-.fran-dec-btn-square p {
-	color: black;
-	font-weight: 500;
-	text-align: center;
-	margin-top: 10px;
 }
 .fran-dec-btn-square:hover {
 	transform: scale(1.05);
@@ -306,26 +306,13 @@ a:hover {
 .fran-dec-btn-circle {
 	width: 100%;
 	max-width: 300px;
-	margin: auto;
-	text-decoration: none;
-	cursor: pointer;
-	transition: transform 0.2s;
 }
 .fran-dec-btn-circle .dec-image {
 	width: 160px;
 	height: 160px;
 	margin: auto;
 	aspect-ratio: 1 / 1;
-	background-size: cover;
-	background-position: center;
-	background-image: url('https://franciscan.edu/wp-content/uploads/2019/02/Campus-Newsfeed-Chapel.jpg');
 	border-radius: 50%;
-}
-.fran-dec-btn-circle p {
-	color: black;
-	font-weight: 500;
-	text-align: center;
-	margin-top: 10px;
 }
 .fran-dec-btn-circle:hover {
 	transform: scale(1.05);
