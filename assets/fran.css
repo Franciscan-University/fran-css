@@ -462,6 +462,15 @@ a:hover {
 	transition: 0.2s;
 }
 
+.fran-dd-set.fran-dd-set-style-2 .fran-dd {
+	border-left: none;
+	border-bottom: 1px solid var(--fran-gold);
+}
+.fran-dd-set.fran-dd-set-style-2 .fran-dd .fran-question {
+	color: var(--fran-blue);
+	font-weight: 500;
+}
+
 
 
 
