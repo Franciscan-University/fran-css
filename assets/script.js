@@ -350,12 +350,13 @@ if (allFranCarouselSections.length != 0) {
     var moveCarouselOnBtn = function(num) {
         return function() {
 
-            //const allFranCarouselSections = document.querySelectorAll('.fran-carousel-section');
             var currentCarouselSection = allFranCarouselBtns[num].closest('.fran-carousel-section');
             var carouselIndex = Array.prototype.indexOf.call(allFranCarouselSections, currentCarouselSection);
 
-            if (carouselIndex != -1) {
-                carouselMove(num, carouselIndex);
+            var carouselNumIndex = Array.prototype.indexOf.call(currentCarouselSection.querySelectorAll('.fran-carousel-btn-row button'), allFranCarouselBtns[num]);
+
+            if (carouselIndex != -1 && carouselNumIndex != -1) {
+                carouselMove(carouselNumIndex, carouselIndex);
             }
 
         }
