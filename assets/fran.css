@@ -843,3 +843,28 @@ div.fran-img-arched {
 	0% { opacity: 1; left: 0; right: 0; }
 	100% { opacity: 0; left: 100vw; right: 0; }
 }
+
+/* Carousel Style 2 */
+.fran-carousel-style-2 {
+	background-image: url('https://institutes.franciscan.edu/wp-content/uploads/sites/17/2025/03/St-Francis-Statue.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.fran-carousel-style-2 .fran-carousel-section-overlay {
+	background-color: #21412ae0;
+	justify-content: center;
+}
+.fran-carousel-style-2 .fran-carousel-arrow-row {
+	display: none;
+}
+.fran-carousel-style-2 .fran-carousel-car p {
+	color: white;
+	text-align: center;
+}
+.fran-carousel-style-2 .fran-carousel-car .quote {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.fran-carousel-style-2 .fran-carousel-car .name {
+	color: var(--fran-tan);
+}
