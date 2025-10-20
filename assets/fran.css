@@ -606,3 +606,238 @@ div.fran-img-arched {
 	background-position: center;
 	transform: rotate(-20deg);
 }
+
+
+
+
+/* === Carousel ========= */
+.fran-carousel-section {
+	overflow: hidden;
+	position: relative;
+	justify-content: center;
+}
+.fran-carousel-surround {
+	width: 100%;
+	transition: 0.3s;
+}
+.fran-carousel {
+	width: 100%;
+}
+.fran-carousel-car {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	position: absolute;
+	left: auto;
+	right: 100vw;
+}
+.fran-carousel-car.active-car {
+	left: 0;
+	right: 0;
+}
+.fran-carousel-car .car-img {
+	width: 86%;
+	height: 15vw;
+	max-height: 200px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	margin: 1vw 0 0 auto;
+}
+.fran-carousel-car .content {
+	border: 2px solid var(--fran-gold);
+	border-radius: 10px;
+	margin: 0 0 1vw -1em;
+	height: auto;
+	min-height: 260px;
+	display: flex;
+	align-items: center;
+}
+.fran-carousel-car .content-wrap {
+	padding: 0 2em;
+	display: flex;
+	display: -ms-flexbox;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.fran-carousel-car .content-wrap i {
+	color: var(--fran-gold);
+	font-size: 2.3em;
+	margin-top: 0.5em;
+}
+.fran-carousel-car .content-wrap p {
+	margin: 0;
+}
+.fran-carousel-car .quote-surround {
+	margin-bottom: 2em;
+}
+.fran-carousel-car .content-wrap .quotation-mark {
+	font-family: 'desire-pro';
+	font-size: 10em;
+	color: var(--fran-gold);
+	height: 100px;
+}
+.fran-carousel-car .content-wrap .quote {
+	font-size: 1.05em;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+.fran-carousel-car .content-wrap .name {
+	font-size: 0.9em;
+	font-weight: 500;
+	text-align: right;
+	margin-bottom: 1em;
+}
+.fran-carousel-car .content-wrap .secondary {
+	text-align: right; 
+	font-size: 0.8em; 
+	margin-top: 0; 
+	margin-bottom: 2em;
+}
+
+.fran-carousel-btn-row {
+	width: 100%;
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	position: relative;
+}
+.fran-carousel-btn-row button {
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 1px solid #2b2b2b;
+	border-radius: 50%;
+	margin: 10px;
+	cursor: pointer;
+}
+.fran-carousel-btn-row button span {
+	display: none;
+	width: 13px;
+	height: 13px;
+	max-width: 13px;
+	max-height: 13px;
+	min-width: 13px;
+	min-height: 13px;
+	border-radius: 50%;
+	background-color: #2b2b2b;
+}
+.fran-carousel-btn-row .active-button span {
+	display: block;
+}
+.fran-carousel-arrow-row {
+	position: absolute;
+	top: 42%;
+	width: 95%;
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	display: -ms-flexbox;
+	justify-content: space-between;
+}
+.fran-carousel-arrow-row .arrow-left,
+.fran-carousel-arrow-row .arrow-right {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: var(--fran-gold);
+	cursor: pointer;
+	transition: 0.2s;
+}
+.fran-carousel-arrow-row .arrow-left:hover,
+.fran-carousel-arrow-row .arrow-right:hover {
+	background-color: #ca8c36;
+}
+
+@media only screen and (max-width: 940px) {
+	.fran-carousel-car .content-wrap i {
+		font-size: 1.9em;
+	}
+	.fran-carousel-car .content-wrap .quote {
+		font-size: 0.9em;
+	}
+	.fran-carousel-car .content-wrap .name {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.fran-carousel-car .content {
+		border: none;
+		margin: 0;
+	}
+	.fran-carousel-car > .row {
+		border: 2px solid var(--fran-gold);
+		border-radius: 10px;
+	}
+	.fran-carousel-car .car-img {
+		max-width: 25vw;
+		height: 22vw;
+		margin: 5vw 0 0 16px;
+	}
+	.fran-carousel-car .content {
+		min-height: 140px;
+	}
+	.fran-carousel-car .content-wrap .quotation-mark {
+		height: 77px;
+		line-height: 1.2;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.fran-carousel-car .car-img {
+		max-width: 34vw;
+		height: 31vw;
+	}
+}
+
+/* move carousel left (car right) */
+.car-moving-right-to-active {
+	animation-name: activeCarRight;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.car-moving-right-to-inactive {
+	animation-name: inactiveCarRight;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes activeCarRight {
+	0% { opacity: 0; left: 100vw; right: 0; }
+	100% { opacity: 1; left: 0; right: 0; }
+}
+@keyframes inactiveCarRight {
+	0% { opacity: 1; left: 0; right: 0; }
+	100% { opacity: 0; left: -100vw; right: 0; }
+}
+
+/* move carousel right (car left) */
+.car-moving-left-to-active {
+	animation-name: activeCarLeft;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.car-moving-left-to-inactive {
+	animation-name: inactiveCarLeft;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes activeCarLeft {
+	0% { opacity: 0; left: -100vw; right: 0; }
+	100% { opacity: 1; left: 0; right: 0; }
+}
+@keyframes inactiveCarLeft {
+	0% { opacity: 1; left: 0; right: 0; }
+	100% { opacity: 0; left: 100vw; right: 0; }
+}
