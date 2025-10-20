@@ -630,10 +630,12 @@ div.fran-img-arched {
 	position: absolute;
 	left: auto;
 	right: 100vw;
+	opacity: 0;
 }
 .fran-carousel-car.active-car {
 	left: 0;
 	right: 0;
+	opacity: 1;
 }
 .fran-carousel-car .car-img {
 	width: 86%;
