@@ -133,7 +133,7 @@ const btnMoveTimeout = 10;
 
 if (allFranCarouselSections.length != 0) {
 
-    const allFranCarouselsSurrounds = document.querySelectorAll('.fran-carousel-surround');
+    var allFranCarouselsSurrounds = document.querySelectorAll('.fran-carousel-surround');
 
     var allFranCarousels = document.querySelectorAll('.fran-carousel');
     const allFranCarouselCars = document.querySelectorAll('.fran-carousel-car');
