@@ -128,14 +128,17 @@ for (var i=0; i<franTabBtns.length; i++) {
 
 const allFranCarouselSections = document.querySelectorAll('.fran-carousel-section');
 
+const regMoveTimeout = 5;
+const btnMoveTimeout = 10;
+
 if (allFranCarouselSections.length != 0) {
 
     const allFranCarouselsSurrounds = document.querySelectorAll('.fran-carousel-surround');
 
-    const allFranCarousels = document.querySelectorAll('.fran-carousel');
+    var allFranCarousels = document.querySelectorAll('.fran-carousel');
     const allFranCarouselCars = document.querySelectorAll('.fran-carousel-car');
-    const allFranCarouselLeftArrows = document.querySelectorAll('.fran-carousel-arrow-row .arrow-left');
-    const allFranCarouselRightArrows = document.querySelectorAll('.fran-carousel-arrow-row .arrow-right');
+    var allFranCarouselLeftArrows = document.querySelectorAll('.fran-carousel-arrow-row .arrow-left');
+    var allFranCarouselRightArrows = document.querySelectorAll('.fran-carousel-arrow-row .arrow-right');
     var allFranCarouselBtns = document.querySelectorAll('.fran-carousel-btn-row button');
 
     var initCarouselLoad = false;
@@ -143,9 +146,6 @@ if (allFranCarouselSections.length != 0) {
 
     var autoplayCarouselList = [];
     var carouselOffsets = [];
-
-    const regMoveTimeout = 5;
-    const btnMoveTimeout = 10;
 
 
     function setUpCarousels() {
