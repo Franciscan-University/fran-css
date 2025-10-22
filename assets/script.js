@@ -1,5 +1,5 @@
 // Franciscan University scripts for general functional elements
-
+"use strict";
 
 // === Dropdown Accordion ===================== //
 
