@@ -121,7 +121,7 @@ a:hover {
 	background-color: var(--fran-btn-round-reg-background-color-hover);
 	--fran-btn-round-reg-color-hover: var(--fran-green);
 	color: var(--fran-btn-round-reg-color-hover);
-	--fran-btn-round-reg-border-color-hover: var(--fran-green);
+	--fran-btn-round-reg-border-color-hover: transparent;
 	border-color: var(--fran-btn-round-reg-border-color-hover);
 }
 
@@ -144,7 +144,7 @@ a:hover {
 	background-color: var(--fran-btn-round-md-background-color-hover);
 	--fran-btn-round-md-color-hover: var(--fran-green);
 	color: var(--fran-btn-round-md-color-hover);
-	--fran-btn-round-md-border-color-hover: var(--fran-green);
+	--fran-btn-round-md-border-color-hover: transparent;
 	border-color: var(--fran-btn-round-md-border-color-hover);
 }
 
@@ -168,7 +168,7 @@ a:hover {
 	background-color: var(--fran-btn-round-lg-background-color-hover);
 	--fran-btn-round-lg-color-hover: var(--fran-green);
 	color: var(--fran-btn-round-lg-color-hover);
-	--fran-btn-round-lg-border-color-hover: var(--fran-green);
+	--fran-btn-round-lg-border-color-hover: transparent;
 	border-color: var(--fran-btn-round-lg-border-color-hover);
 }
 
@@ -192,7 +192,7 @@ a:hover {
 	background-color: var(--fran-btn-square-reg-background-color-hover);
 	--fran-btn-square-reg-color-hover: var(--fran-green);
 	color: var(--fran-btn-square-reg-color-hover);
-	--fran-btn-square-reg-border-color-hover: var(--fran-green);
+	--fran-btn-square-reg-border-color-hover: transparent;
 	border-color: var(--fran-btn-square-reg-border-color-hover);
 }
 
@@ -215,7 +215,7 @@ a:hover {
 	background-color: var(--fran-btn-square-md-background-color-hover);
 	--fran-btn-square-md-color-hover: var(--fran-green);
 	color: var(--fran-btn-square-md-color-hover);
-	--fran-btn-square-md-border-color-hover: var(--fran-green);
+	--fran-btn-square-md-border-color-hover: transparent;
 	border-color: var(--fran-btn-square-md-border-color-hover);
 }
 
@@ -239,7 +239,7 @@ a:hover {
 	background-color: var(--fran-btn-square-lg-background-color-hover);
 	--fran-btn-square-lg-color-hover: var(--fran-green);
 	color: var(--fran-btn-square-lg-color-hover);
-	--fran-btn-square-lg-border-color-hover: var(--fran-green);
+	--fran-btn-square-lg-border-color-hover: transparent;
 	border-color: var(--fran-btn-square-lg-border-color-hover);
 }
 
@@ -980,7 +980,7 @@ div.fran-img-arched {
 	}
 }
 
-/* Color Banner 3 */
+/* Image Banner 1 */
 .image-banner-1 {
 	background-image: url('https://franciscan.edu/wp-content/uploads/2024/07/next-steps-img.jpeg');
 	background-size: cover;
@@ -1006,7 +1006,7 @@ div.fran-img-arched {
 	font-size: 1.8em;
 }
 
-/* Color Banner 4 */
+/* Image Banner 2 */
 .image-banner-2 {
 	background-image: url('https://franciscan.edu/wp-content/uploads/2025/10/campus-jc.jpg');
 	background-position: center;
