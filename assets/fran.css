@@ -1047,11 +1047,12 @@ div.fran-img-arched {
 
 
 
-/* === BANNERS =============== */
+/* === SEGMENTS =============== */
 /* Profile Card 1 */
 .fran-profile-card-1 {
 	width: 100%;
 	max-width: 300px;
+	background-color: white;
 	box-shadow: 0 5px 15px #0000002e;
 	border-radius: 10px;
 	padding: 1em 0;
@@ -1077,9 +1078,11 @@ div.fran-img-arched {
 	font-weight: 600;
 	margin-top: 13px;
 	margin-bottom: 5px;
+	color: black;
 }
 .fran-profile-card-1 .desc {
 	margin-top: 0; 
+	color: #2b2b2b;
 }
 
 /* Profile Card 2 */
