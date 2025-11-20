@@ -11,7 +11,7 @@ var franDropDownAnim = function(num) {
 
         var franAnswers = franSection.querySelectorAll('.fran-answer');
         var franAnswer = franBox.querySelector('.fran-answer');
-        var franIcon = franBox.querySelector('.fran-question i');
+        var franIcon = franBox.querySelector('.fran-question-icon i');
 
         var textHeight = 0;
         var textNode = franAnswer.children[0];
