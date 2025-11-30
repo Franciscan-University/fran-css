@@ -449,3 +449,118 @@ if (allFranCarouselSections.length != 0) {
     setInterval(autoplayAllCarousels, 1000);
 
 }
+
+
+
+// === Pop Content Carousel ======== //
+const allFranScrollingCarousels = document.querySelectorAll('.fran-pop-content-carousel-surround');
+const allFranScrollingCarouselLeftArrows = document.querySelectorAll('.fran-pop-content-carousel-surround .left-arrow');
+const allFranScrollingCarouselRightArrows = document.querySelectorAll('.fran-pop-content-carousel-surround .right-arrow');
+
+
+function allFranScrollingCarouselsSetup() {
+
+    for (let i=0; i<allFranScrollingCarousels.length; i++) {
+        var carouselWrap = allFranScrollingCarousels[i].querySelector('.fran-pop-content-carousel-wrap');
+        var carouselFirstCar = allFranScrollingCarousels[i].querySelector('.scroll-car');
+        var carouselAllCars = allFranScrollingCarousels[i].querySelectorAll('.scroll-car');
+
+        if (window.innerWidth > 1250) {
+            carouselWrap.style.transform = 'translateX(' + ((carouselFirstCar.getBoundingClientRect().width * -1) - (carouselFirstCar.getBoundingClientRect().width * 0.15)) + 'px)';
+        } else {
+            carouselWrap.style.transform = 'translateX(' + ((carouselFirstCar.getBoundingClientRect().width * -1) - (carouselFirstCar.getBoundingClientRect().width * 1.1)) + 'px)';
+        }
+
+        for (let j=0; j<carouselAllCars.length; j++) {
+            carouselAllCars[j].classList.remove('active-car');
+        }
+        carouselAllCars[3].classList.add('active-car');
+    }
+
+}
+allFranScrollingCarouselsSetup();
+
+// resize carousels on window resize
+window.addEventListener("resize", function() {
+
+    for (let i=0; i<allFranScrollingCarousels.length; i++) {
+        var carouselWrap = allFranScrollingCarousels[i].querySelector('.fran-pop-content-carousel-wrap');
+        var carouselFirstCar = allFranScrollingCarousels[i].querySelector('.scroll-car');
+
+        if (window.innerWidth > 1250) {
+            carouselWrap.style.transform = 'translateX(' + ((carouselFirstCar.getBoundingClientRect().width * -1) - (carouselFirstCar.getBoundingClientRect().width * 0.15)) + 'px)';
+        } else {
+            carouselWrap.style.transform = 'translateX(' + ((carouselFirstCar.getBoundingClientRect().width * -1) - (carouselFirstCar.getBoundingClientRect().width * 1.1)) + 'px)';
+        }
+    }
+
+});
+
+
+var moveScrollingCarouselLeft = function(num) {
+    return function() {
+        
+        var getCurrentCarousel = allFranScrollingCarouselLeftArrows[num].closest('.fran-pop-content-carousel-surround');
+        moveScrollingCarousel(getCurrentCarousel, 'left');
+
+    }
+}
+
+var moveScrollingCarouselRight = function(num) {
+    return function() {
+        
+        var getCurrentCarousel = allFranScrollingCarouselRightArrows[num].closest('.fran-pop-content-carousel-surround');
+        moveScrollingCarousel(getCurrentCarousel, 'right');
+
+    }
+}
+
+function moveScrollingCarousel(carousel, direction) {
+
+    // replace car position
+    var firstCar = carousel.querySelector('.scroll-car');
+    var lastCar = carousel.querySelectorAll('.scroll-car')[(carousel.querySelectorAll('.scroll-car').length - 1)];
+    var carouselWrap = carousel.querySelector('.fran-pop-content-carousel-wrap');
+    var allCars = carousel.querySelectorAll('.scroll-car');
+
+    if ( direction == 'right' ) {
+        carouselWrap.appendChild(firstCar);
+    } else {
+        carouselWrap.insertBefore(lastCar, firstCar)
+    }
+
+
+    // move carousel
+    var carWidth = carousel.querySelector('.scroll-car').getBoundingClientRect().width;
+
+    if (direction == 'left') {
+        carWidth = carWidth * -1;
+    }
+
+    //var carouselTransform = ( carouselWrap.style.transform == undefined ) ? 0 : carouselWrap.style.transform;
+    for (let i=0; i<allCars.length; i++) {
+        allCars[i].classList.remove('active-car');
+    }
+
+    if (direction == 'right') {
+        allCars[4].classList.add('active-car');
+    } else {
+        allCars[2].classList.add('active-car');
+    }
+    
+
+
+}
+
+
+for (var i=0; i<allFranScrollingCarouselLeftArrows.length; i++) {
+    if (Array.prototype.indexOf.call(allFranScrollingCarouselLeftArrows, allFranScrollingCarouselLeftArrows[i] == i)) {
+        allFranScrollingCarouselLeftArrows[i].onclick = moveScrollingCarouselLeft(i);
+    }
+}
+
+for (var i=0; i<allFranScrollingCarouselRightArrows.length; i++) {
+    if (Array.prototype.indexOf.call(allFranScrollingCarouselRightArrows, allFranScrollingCarouselRightArrows[i] == i)) {
+        allFranScrollingCarouselRightArrows[i].onclick = moveScrollingCarouselRight(i);
+    }
+}
