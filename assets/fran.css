@@ -1078,6 +1078,129 @@ div.fran-img-arched {
 
 
 
+/* Pop Content Carousel */
+.fran-pop-content-carousel-surround {
+	position: relative;
+}
+.fran-pop-content-carousel {
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+}
+.fran-pop-content-carousel-wrap {
+	display: flex;
+	width: 100%;
+	transition: 0.7s;
+}
+.fran-pop-content-carousel .scroll-car {
+	position: relative;
+	width: 20%;
+	min-width: 20%;
+	aspect-ratio: 4 / 5;
+	margin-right: 10px;
+	border-radius: 7px;
+	overflow: hidden;
+	border: 6px solid transparent;
+}
+.fran-pop-content-carousel .scroll-car:hover,
+.fran-pop-content-carousel .scroll-car.active-car {
+	border-color: var(--fran-gold);
+}
+.fran-pop-content-carousel .scroll-car-img {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 4px;
+}
+.fran-pop-content-carousel .scroll-car-content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(0deg, #000000db, #00000080);
+	opacity: 0;
+	transition: 0.2s;
+}
+.fran-pop-content-carousel .scroll-car-content:hover,
+.fran-pop-content-carousel .active-car .scroll-car-content {
+	opacity: 1;
+}
+.fran-pop-content-carousel .scroll-car-content-wrap {
+	width: 85%;
+	height: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.fran-pop-content-carousel .scroll-car-content .title {
+	color: white;
+	font-weight: 600;
+	font-size: 1.1em;
+	margin: 0;
+}
+.fran-pop-content-carousel .scroll-car-content .desc {
+	color: white;
+	font-size: 0.95em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.fran-pop-content-carousel .scroll-car-content .icon {
+	color: var(--fran-gold);
+	font-size: 1.5em;
+	text-align: right;
+	margin: 0;
+}
+
+.fran-pop-content-carousel-arrows {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	pointer-events: none;
+}
+.fran-pop-content-carousel-arrows .left-arrow,
+.fran-pop-content-carousel-arrows .right-arrow {
+	background-color: var(--fran-gold);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 10px 14px;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 0;
+	cursor: pointer;
+	pointer-events: all;
+	transition: 0.2s;
+}
+.fran-pop-content-carousel-arrows .left-arrow {
+	left: 5px;
+}
+.fran-pop-content-carousel-arrows .right-arrow {
+	right: 5px;
+}
+.fran-pop-content-carousel-arrows .left-arrow:hover,
+.fran-pop-content-carousel-arrows .right-arrow:hover {
+	background-color: #b77823;
+}
+.fran-pop-content-carousel-arrows .left-arrow i,
+.fran-pop-content-carousel-arrows .right-arrow i {
+	font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1250px) {
+	.fran-pop-content-carousel .scroll-car {
+		width: 33.333333%;
+		min-width: 33.333333%;
+	}
+}
+
+
+
 
 
 
