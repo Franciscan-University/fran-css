@@ -1374,7 +1374,8 @@ div.fran-img-arched {
 }
 
 /* Sidestep Banner Image Left */
-.sidestep-image-banner-left {
+.sidestep-image-banner-left,
+.sidestep-image-banner-right {
 	background-color: var(--fran-green);
 }
 .sidestep-image-banner-left .sidestep-col-left {
@@ -1384,6 +1385,15 @@ div.fran-img-arched {
 .sidestep-image-banner-left .sidestep-col-right {
 	flex: 0 0 60%;
 	max-width: 60%;
+	border-top: 40px solid white;
+}
+.sidestep-image-banner-right .sidestep-col-left {
+	flex: 0 0 60%;
+	max-width: 60%;
+}
+.sidestep-image-banner-right .sidestep-col-right {
+	flex: 0 0 40%;
+	max-width: 40%;
 	border-top: 40px solid white;
 }
 .sidestep-image-banner .side-img {
