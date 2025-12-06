@@ -143,36 +143,36 @@ a:hover {
 /* Rounded Medium */
 .fran-btn-round-md {
 	--fran-btn-round-md-background-color: var(--fran-green);
-	background-color: var(--fran-btn-round-md-background-color);
+	background-color: var(--fran-btn-round-md-background-color)!important;
 	--fran-btn-round-md-color: white;
-	color: var(--fran-btn-round-md-color);
+	color: var(--fran-btn-round-md-color)!important;
 	border: 1px solid transparent;
 	border-radius: 25px;
 	--fran-btn-round-md-border-color: transparent;
-	border-color: var(--fran-btn-round-md-border-color);
+	border-color: var(--fran-btn-round-md-border-color)!important;
 	padding: 0.5em 2em;
 	font-size: 20px;
 	font-weight: 500;
 }
 .fran-btn-round-md:hover {
 	--fran-btn-round-md-background-color-hover: var(--fran-blue);
-	background-color: var(--fran-btn-round-md-background-color-hover);
+	background-color: var(--fran-btn-round-md-background-color-hover)!important;
 	--fran-btn-round-md-color-hover: white;
-	color: var(--fran-btn-round-md-color-hover);
+	color: var(--fran-btn-round-md-color-hover)!important;
 	--fran-btn-round-md-border-color-hover: transparent;
-	border-color: var(--fran-btn-round-md-border-color-hover);
+	border-color: var(--fran-btn-round-md-border-color-hover)!important;
 }
 
 /* Rounded Large */
 .fran-btn-round-lg {
 	--fran-btn-round-lg-background-color: var(--fran-green);
-	background-color: var(--fran-btn-round-lg-background-color);
+	background-color: var(--fran-btn-round-lg-background-color)!important;
 	--fran-btn-round-lg-color: white;
-	color: var(--fran-btn-round-lg-color);
+	color: var(--fran-btn-round-lg-color)!important;
 	border: 1px solid transparent;
 	border-radius: 35px;
 	--fran-btn-round-lg-border-color: transparent;
-	border-color: var(--fran-btn-round-lg-border-color);
+	border-color: var(--fran-btn-round-lg-border-color)!important;
 	padding: 0.7em 3em;
 	font-size: 22px;
 	font-weight: 400;
@@ -180,11 +180,11 @@ a:hover {
 }
 .fran-btn-round-lg:hover {
 	--fran-btn-round-lg-background-color-hover: var(--fran-blue);
-	background-color: var(--fran-btn-round-lg-background-color-hover);
+	background-color: var(--fran-btn-round-lg-background-color-hover)!important;
 	--fran-btn-round-lg-color-hover: white;
-	color: var(--fran-btn-round-lg-color-hover);
+	color: var(--fran-btn-round-lg-color-hover)!important;
 	--fran-btn-round-lg-border-color-hover: transparent;
-	border-color: var(--fran-btn-round-lg-border-color-hover);
+	border-color: var(--fran-btn-round-lg-border-color-hover)!important;
 }
 
 /* ====================================== */
@@ -192,58 +192,58 @@ a:hover {
 /* Square Regular */
 .fran-btn-square-reg {
 	--fran-btn-square-reg-background-color: var(--fran-green);
-	background-color: var(--fran-btn-square-reg-background-color);
+	background-color: var(--fran-btn-square-reg-background-color)!important;
 	--fran-btn-square-reg-color: white;
-	color: var(--fran-btn-square-reg-color);
+	color: var(--fran-btn-square-reg-color)!important;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	--fran-btn-square-reg-border-color: transparent;
-	border-color: var(--fran-btn-square-reg-border-color);
+	border-color: var(--fran-btn-square-reg-border-color)!important;
 	padding: 0.6em 1.4em;
 	font-size: 16px;
 }
 .fran-btn-square-reg:hover {
 	--fran-btn-square-reg-background-color-hover: var(--fran-blue);
-	background-color: var(--fran-btn-square-reg-background-color-hover);
+	background-color: var(--fran-btn-square-reg-background-color-hover)!important;
 	--fran-btn-square-reg-color-hover: white;
-	color: var(--fran-btn-square-reg-color-hover);
+	color: var(--fran-btn-square-reg-color-hover)!important;
 	--fran-btn-square-reg-border-color-hover: transparent;
-	border-color: var(--fran-btn-square-reg-border-color-hover);
+	border-color: var(--fran-btn-square-reg-border-color-hover)!important;
 }
 
 /* Square Medium */
 .fran-btn-square-md {
 	--fran-btn-square-md-background-color: var(--fran-green);
-	background-color: var(--fran-btn-square-md-background-color);
+	background-color: var(--fran-btn-square-md-background-color)!important;
 	--fran-btn-square-md-color: white;
-	color: var(--fran-btn-square-md-color);
+	color: var(--fran-btn-square-md-color)!important;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	--fran-btn-square-md-border-color: transparent;
-	border-color: var(--fran-btn-square-md-border-color);
+	border-color: var(--fran-btn-square-md-border-color)!important;
 	padding: 0.5em 2em;
 	font-size: 20px;
 	font-weight: 500;
 }
 .fran-btn-square-md:hover {
 	--fran-btn-square-md-background-color-hover: var(--fran-blue);
-	background-color: var(--fran-btn-square-md-background-color-hover);
+	background-color: var(--fran-btn-square-md-background-color-hover)!important;
 	--fran-btn-square-md-color-hover: white;
-	color: var(--fran-btn-square-md-color-hover);
+	color: var(--fran-btn-square-md-color-hover)!important;
 	--fran-btn-square-md-border-color-hover: transparent;
-	border-color: var(--fran-btn-square-md-border-color-hover);
+	border-color: var(--fran-btn-square-md-border-color-hover)!important;
 }
 
 /* Square Large */
 .fran-btn-square-lg {
 	--fran-btn-square-lg-background-color: var(--fran-green);
-	background-color: var(--fran-btn-square-lg-background-color);
+	background-color: var(--fran-btn-square-lg-background-color)!important;
 	--fran-btn-square-lg-color: white;
-	color: var(--fran-btn-square-lg-color);
+	color: var(--fran-btn-square-lg-color)!important;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	--fran-btn-square-lg-border-color: transparent;
-	border-color: var(--fran-btn-square-lg-border-color);
+	border-color: var(--fran-btn-square-lg-border-color)!important;
 	padding: 0.7em 3.8em;
 	font-size: 22px;
 	font-weight: 400;
@@ -251,11 +251,11 @@ a:hover {
 }
 .fran-btn-square-lg:hover {
 	--fran-btn-square-lg-background-color-hover: var(--fran-blue);
-	background-color: var(--fran-btn-square-lg-background-color-hover);
+	background-color: var(--fran-btn-square-lg-background-color-hover)!important;
 	--fran-btn-square-lg-color-hover: white;
-	color: var(--fran-btn-square-lg-color-hover);
+	color: var(--fran-btn-square-lg-color-hover)!important;
 	--fran-btn-square-lg-border-color-hover: transparent;
-	border-color: var(--fran-btn-square-lg-border-color-hover);
+	border-color: var(--fran-btn-square-lg-border-color-hover)!important;
 }
 
 
