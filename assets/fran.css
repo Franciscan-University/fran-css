@@ -121,23 +121,23 @@ a:hover {
 /* Rounded Regular */
 .fran-btn-round-reg {
 	--fran-btn-round-reg-background-color: var(--fran-green);
-	background-color: var(--fran-btn-round-reg-background-color);
+	background-color: var(--fran-btn-round-reg-background-color)!important;
 	--fran-btn-round-reg-color: white;
-	color: var(--fran-btn-round-reg-color);
+	color: var(--fran-btn-round-reg-color)!important;
 	border: 1px solid transparent;
 	border-radius: 25px;
-	--fran-btn-round-reg-border-color: transparent;
+	--fran-btn-round-reg-border-color: transparent!important;
 	border-color: var(--fran-btn-round-reg-border-color);
 	padding: 0.6em 1.4em;
 	font-size: 16px;
 }
 .fran-btn-round-reg:hover {
 	--fran-btn-round-reg-background-color-hover: var(--fran-blue);
-	background-color: var(--fran-btn-round-reg-background-color-hover);
+	background-color: var(--fran-btn-round-reg-background-color-hover)!important;
 	--fran-btn-round-reg-color-hover: white;
-	color: var(--fran-btn-round-reg-color-hover);
+	color: var(--fran-btn-round-reg-color-hover)!important;
 	--fran-btn-round-reg-border-color-hover: transparent;
-	border-color: var(--fran-btn-round-reg-border-color-hover);
+	border-color: var(--fran-btn-round-reg-border-color-hover)!important;
 }
 
 /* Rounded Medium */
