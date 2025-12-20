@@ -1272,6 +1272,9 @@ div.fran-img-arched {
 	padding: 0 1em;
 	border-right: 1px solid #ffffff56;
 }
+.color-banner-2 > div:last-child .content {
+	border-right: none;
+}
 .color-banner-2 .text {
 	color: white;
 	margin: 5px;
