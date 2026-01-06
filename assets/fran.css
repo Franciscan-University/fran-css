@@ -1417,7 +1417,9 @@ div.fran-img-arched {
 @media only screen and (max-width: 767px) {
 
 	.sidestep-image-banner-left .sidestep-col-left,
-	.sidestep-image-banner-left .sidestep-col-right {
+	.sidestep-image-banner-left .sidestep-col-right,
+	.sidestep-image-banner-right .sidestep-col-left,
+	.sidestep-image-banner-right .sidestep-col-right {
 		flex: 0 0 100%;
 		max-width: 100%;
 		border-top: none;
