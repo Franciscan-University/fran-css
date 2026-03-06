@@ -29,6 +29,7 @@ h3 {
 a {
     color: var(--fran-blue);
     word-wrap: break-word;
+    word-break: break-all;
 }
 img {
     max-width: 100%;
